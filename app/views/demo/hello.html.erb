@@ -1,0 +1,15 @@
+<h1>Demo#index</h1>
+<p>Hello View</p>
+
+ID: <%= @id %>
+Next page: <%= @page.to_i + 1 %><br />
+
+<% target = "World" %>
+<%= "hello #{target}" %>
+<br />
+
+<%= link_to("my link", {:action => 'index'}) %>
+
+<hr />
+
+<%= params.inspect %>
